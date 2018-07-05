@@ -2,13 +2,11 @@ package com.halcyonmobile.adoption.profile;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -27,8 +25,8 @@ import com.halcyonmobile.adoption.model.Pet;
 import com.halcyonmobile.adoption.pet.CardAdapter;
 import com.halcyonmobile.adoption.pet.FilterBySpeciesActivity;
 import com.halcyonmobile.adoption.pet.PetDetailActivity;
+import com.halcyonmobile.adoption.pet.RecommendedActivity;
 import com.halcyonmobile.adoption.pet.SearchPetActivity;
-import com.halcyonmobile.adoption.pet.SeeRecommendedActivity;
 import com.yuyakaido.android.cardstackview.CardStackView;
 import com.yuyakaido.android.cardstackview.SwipeDirection;
 
@@ -146,7 +144,7 @@ public class PetsFragment extends Fragment implements CardStackView.CardEventLis
                 startActivity(FilterBySpeciesActivity.getStartIntent(getContext()));
                 return true;
             case R.id.recommended:
-                startActivity(SeeRecommendedActivity.getStartIntent(getContext()));
+                startActivity(RecommendedActivity.Companion.getStartIntent(getContext()));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

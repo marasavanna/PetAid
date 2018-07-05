@@ -54,7 +54,7 @@ class EditPetActivity : AppCompatActivity() {
         buttonSave.setOnClickListener {
             if (changedMain) {
                 val petStorageMain = storage.child("pets").child(pet.id + 1)
-                petStorageMain.putFile(imageMainUri).addOnFailureListener({ println(it.message) }).addOnSuccessListener {
+                petStorageMain.putFile(imageMainUri).addOnFailureListener { println(it.message) }.addOnSuccessListener {
                     petStorageMain.downloadUrl.addOnSuccessListener {
                         pet.imageMain = it.toString()
                         databasePets.child(pet.id).setValue(pet)

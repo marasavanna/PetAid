@@ -3,11 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pet.SeeRecommendedActivity">
+    tools:context=".pet.RecommendedActivity">
     
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recommended_pets"
+        android:id="@+id/listRecommendedPets"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="16dp" />
 
 </android.support.constraint.ConstraintLayout>

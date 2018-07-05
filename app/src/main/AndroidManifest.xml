@@ -56,7 +56,7 @@
         <activity android:name=".profile.UserDetailActivity" />
         <activity android:name=".profile.SearchUserActivity" />
         <activity android:name=".pet.FilterBySpeciesActivity" />
-        <activity android:name=".pet.SeeRecommendedActivity"></activity>
+        <activity android:name=".pet.RecommendedActivity" />
     </application>
 
 </manifest>
