@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "149314281807",
+    "firebase_url": "https://adoption-54666.firebaseio.com",
+    "project_id": "adoption-54666",
+    "storage_bucket": "adoption-54666.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149314281807:android:044f9fc6e2ac5966",
+        "android_client_info": {
+          "package_name": "com.halcyonmobile.adoption"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149314281807-73v4hb95v54p98flhu3nph342lv6fneg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0e3RGWtQXVvaBSSpPSrX3OOi2Z-r1od8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

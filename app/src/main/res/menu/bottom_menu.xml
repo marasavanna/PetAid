@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_pets"
+        android:icon="@drawable/ic_pets_black_24dp"
+        android:orderInCategory="1"
+        android:title="Pets" />
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/ic_message_black_24dp"
+        android:orderInCategory="2"
+        android:title="Messages" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:orderInCategory="3"
+        android:title="Settings" />
+
+
+
+</menu>

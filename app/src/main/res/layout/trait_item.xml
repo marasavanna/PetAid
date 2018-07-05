@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="TraitBinding">
+        <variable
+            name="trait"
+            type="com.halcyonmobile.adoption.model.Trait"/>
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="2dp"
+        android:id="@+id/trait_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/accent"
+        app:cardCornerRadius="16dp">
+
+        <TextView
+            android:id="@+id/trait_name"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="energetic"
+            android:text="@{trait.name}"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </android.support.v7.widget.CardView>
+</layout>
+

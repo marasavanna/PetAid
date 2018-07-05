@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Adoption</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="followers">245 followers \n 139 following</string>
+    <string name="adopted">4 adopted pets \n 8 given</string>
+    <string name="user_name_age">Marcela, 21</string>
+    <string name="pet_race_age">%s old %s</string>
+
+    <string name="post_time_ago">%d minutes ago</string>
+    <string name="enter_description">Tell others something about yourself</string>
+    <string name="username_not_valid">Username not valid !</string>
+    <string name="password_not_valid">Password not valid !</string>
+    <string name="email_not_valid">Email invalid !</string>
+    <array name="actions_wishlist">
+        <item>Remove</item>
+    </array>
+    <array name="actions_pets">
+        <item>Edit</item>
+        <item>Remove</item>
+    </array>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="4dp"
+    android:layout_margin="4dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="PetItemBinding">
+
+        <variable
+            name="pet"
+            type="com.halcyonmobile.adoption.model.Pet" />
+
+    </data>
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="158dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pet_image"
+                android:layout_width="158dp"
+                android:layout_height="158dp"
+                android:scaleType="centerCrop"
+                android:src="@{pet.imageMain}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/girl"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/pet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{pet.name}"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toEndOf="@+id/pet_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.349"
+                tools:text="Lola" />
+
+            <TextView
+                android:id="@+id/pet_race_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/pet_race_age(pet.getAgeString(), pet.species)}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pet_image"
+                app:layout_constraintTop_toBottomOf="@+id/pet_name"
+                app:layout_constraintVertical_bias="0.238"
+                tools:text="7 months old cat" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</layout>
